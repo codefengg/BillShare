@@ -1,58 +1,27 @@
-<view style="text-align: center; color: #b9b9b9" wx:if="{{pageLoading}}">
+<view style="text-align: center; color: #b9b9b9" wx:if="{{!pageLoading}}">
   <t-loading theme="circular" size="40rpx" text="加载中..." inherit-color />
 </view>
-<view class="home-page-header">
-  <view class="search" bind:tap="navToSearchPage">
-    <t-search
-      t-class-input="t-search__input"
-      t-class-input-container="t-search__input-container"
-      placeholder="iphone 13 火热发售中"
-      leftIcon=""
-      disabled
-    >
-      <t-icon slot="left-icon" prefix="wr" name="search" size="40rpx" color="#bbb" />
-    </t-search>
+<t-navbar left-arrow="{{flase}}">
+  <view slot="left" class="custom-title">
+    全部类型
+    <t-icon name="chevron-right" size="28rpx" />
   </view>
-  <view class="swiper-wrap">
-    <t-swiper
-      wx:if="{{imgSrcs.length > 0}}"
-      current="{{current}}"
-      autoplay="{{autoplay}}"
-      duration="{{duration}}"
-      interval="{{interval}}"
-      navigation="{{navigation}}"
-      imageProps="{{swiperImageProps}}"
-      list="{{imgSrcs}}"
-      bind:click="navToActivityDetail"
-    />
+</t-navbar>
+<t-row>
+  <view class="data-display">
+    <t-col span="8" offset="1" t-class="data-display__time">
+      <view class="time-year">2018
+        <t-icon style="margin-left: -2px;" color="#666666" name="caret-down-small" size="32rpx" />
+      </view>
+      <view class="time-month">5月</view>
+    </t-col>
+    <t-col span="7" t-class="data-display__data">
+      <view class="data-title">收入</view>
+      100.00
+    </t-col>
+    <t-col span="7" t-class="data-display__data">
+      <view class="data-title">收入</view>
+      100.00
+    </t-col>
   </view>
-</view>
-<view class="home-page-container">
-  <view class="home-page-tabs">
-    <t-tabs
-      t-class="t-tabs"
-      t-class-active="tabs-external__active"
-      t-class-item="tabs-external__item"
-      defaultValue="{{0}}"
-      space-evenly="{{false}}"
-      bind:change="tabChangeHandle"
-    >
-      <t-tab-panel
-        wx:for="{{tabList}}"
-        wx:for-index="index"
-        wx:key="index"
-        label="{{item.text}}"
-        value="{{item.key}}"
-      />
-    </t-tabs>
-  </view>
-
-  <goods-list
-    wr-class="goods-list-container"
-    goodsList="{{goodsList}}"
-    bind:click="goodListClickHandle"
-    bind:addcart="goodListAddCartHandle"
-  />
-  <load-more list-is-empty="{{!goodsList.length}}" status="{{goodsListLoadStatus}}" bind:retry="onReTry" />
-  <t-toast id="t-toast" />
-</view>
+</t-row>

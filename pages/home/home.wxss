@@ -50,14 +50,14 @@ page {
 .data-display__data {
   display: flex;
   flex-direction: column;
-  font-size: 42rpx;
+  font-size: 50rpx;
   color: #333333;
   font-weight: 500;
   line-height: 1;
 }
 
 .data-title {
-  font-size: 22rpx;
+  font-size: 0.48em;
   color: #999999;
   font-weight: 400;
   margin-bottom: 6rpx;

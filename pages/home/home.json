@@ -20,6 +20,7 @@
     "t-row": "tdesign-miniprogram/row/row",
     "t-col": "tdesign-miniprogram/col/col",
     "price": "/components/price/index",
-    "account-plate": "/components/account-plate/index"
+    "account-plate": "/components/account-plate/index",
+    "t-sticky": "tdesign-miniprogram/sticky/sticky"
   }
 }

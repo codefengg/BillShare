@@ -7,24 +7,27 @@
     <t-icon name="chevron-right" size="28rpx" />
   </view>
 </t-navbar>
-<t-row>
-  <view class="data-display">
-    <t-col span="8" offset="1" t-class="data-display__time">
-      <view class="time-year">2018年
-        <t-icon style="margin-left: -2px;" color="#666666" name="caret-down-small" size="32rpx" />
-      </view>
-      <view class="time-month">5月</view>
-    </t-col>
-    <t-col span="8" offset="1" t-class="data-display__data">
-      <view class="data-title">收入</view>
-      <price symbol="" price="{{10000}}" />
-    </t-col>
-    <t-col span="7" t-class="data-display__data">
-      <view class="data-title">支出</view>
-      <price symbol="" price="{{10000}}" />
-    </t-col>
-  </view>
-</t-row>
+<t-sticky offset-top="{{40}}">
+  <t-row>
+    <view class="data-display">
+      <t-col span="8" offset="1" t-class="data-display__time">
+        <view class="time-year">2018年
+          <t-icon style="margin-left: -2px;" color="#666666" name="caret-down-small" size="32rpx" />
+        </view>
+        <view class="time-month">5月</view>
+      </t-col>
+      <t-col span="8" offset="1" t-class="data-display__data">
+        <view class="data-title">收入</view>
+        <price symbol="" price="{{10000}}" />
+      </t-col>
+      <t-col span="7" t-class="data-display__data">
+        <view class="data-title">支出</view>
+        <price symbol="" price="{{10000}}" />
+      </t-col>
+    </view>
+  </t-row>
+</t-sticky>
 
+<account-plate />
 <account-plate />
 <account-plate />

@@ -1,0 +1,22 @@
+<view class="account-plate">
+	<view class="account-title">
+		<view class="account-title__left">
+			<view class="title">今天</view>
+			6月13号
+		</view>
+		<view class="account-title__right">
+			<view class="right-con">
+				支：
+				<text class="right-number">124322</text>
+			</view>
+			<view class="right-con">
+				收：
+				<text class="right-number">0</text>
+			</view>
+		</view>
+	</view>
+	<account-plate-item/>
+	<account-plate-item/>
+	<account-plate-item/>
+</view>
+

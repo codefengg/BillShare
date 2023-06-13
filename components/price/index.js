@@ -21,8 +21,14 @@ Component({
       type: String,
       value: '¥', // '￥',
     }, // 货币符号，默认是人民币符号￥
-    fill: Boolean, // 是否自动补齐两位小数
-    decimalSmaller: Boolean, // 小数字号小一点
+    fill: {
+      type: Boolean,
+      value: true,
+    }, // 是否自动补齐两位小数
+    decimalSmaller: {
+      type: Boolean,
+      value: true
+    }, // 小数字号小一点
     lineThroughWidth: {
       type: null,
       value: '0.12em',

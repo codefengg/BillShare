@@ -1,7 +1,7 @@
-<view style="text-align: center; color: #b9b9b9" wx:if="{{!pageLoading}}">
+<!-- <view style="text-align: center; color: #b9b9b9" wx:if="{{!pageLoading}}">
   <t-loading theme="circular" size="40rpx" text="加载中..." inherit-color />
-</view>
-<t-navbar left-arrow="{{flase}}">
+</view> -->
+<t-navbar class="custom-navbar" left-arrow="{{flase}}">
   <view slot="left" class="custom-title">
     全部类型
     <t-icon name="chevron-right" size="28rpx" />
@@ -10,18 +10,21 @@
 <t-row>
   <view class="data-display">
     <t-col span="8" offset="1" t-class="data-display__time">
-      <view class="time-year">2018
+      <view class="time-year">2018年
         <t-icon style="margin-left: -2px;" color="#666666" name="caret-down-small" size="32rpx" />
       </view>
       <view class="time-month">5月</view>
     </t-col>
-    <t-col span="7" t-class="data-display__data">
+    <t-col span="8" offset="1" t-class="data-display__data">
       <view class="data-title">收入</view>
-      100.00
+      <price symbol="" price="{{10000}}" />
     </t-col>
     <t-col span="7" t-class="data-display__data">
-      <view class="data-title">收入</view>
-      100.00
+      <view class="data-title">支出</view>
+      <price symbol="" price="{{10000}}" />
     </t-col>
   </view>
 </t-row>
+
+<account-plate />
+<account-plate />

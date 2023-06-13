@@ -18,6 +18,8 @@
     "load-more": "/components/load-more/index",
     "t-navbar": "tdesign-miniprogram/navbar/navbar",
     "t-row": "tdesign-miniprogram/row/row",
-    "t-col": "tdesign-miniprogram/col/col"
+    "t-col": "tdesign-miniprogram/col/col",
+    "price": "/components/price/index",
+    "account-plate": "/components/account-plate/index"
   }
 }

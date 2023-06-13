@@ -1,6 +1,12 @@
 page {
   box-sizing: border-box;
   padding-bottom: calc(env(safe-area-inset-bottom) + 96rpx);
+  background-color: #F1F3F2;
+}
+
+.custom-navbar {
+  --td-navbar-color: #333333;
+  --td-navbar-bg-color: #F1F3F2;
 }
 
 .custom-title {
@@ -22,6 +28,7 @@ page {
 .data-display__time {
   display: flex;
   flex-direction: column;
+  font-family: futura;
 }
 
 .time-year {
@@ -32,25 +39,25 @@ page {
 }
 
 .time-month {
-  font-size: 55rpx;
+  font-size: 65rpx;
   font-weight: 500;
   letter-spacing: 5rpx;
   line-height: 1;
   margin-top: 5rpx;
-  color: #222222;
+  color: #333333;
 }
 
 .data-display__data {
   display: flex;
   flex-direction: column;
-  font-size: 32rpx;
-  color: #222222;
+  font-size: 42rpx;
+  color: #333333;
   font-weight: 500;
   line-height: 1;
 }
 
 .data-title {
-  font-size: 20rpx;
+  font-size: 22rpx;
   color: #999999;
   font-weight: 400;
   margin-bottom: 6rpx;

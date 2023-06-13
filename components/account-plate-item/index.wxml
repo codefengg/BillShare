@@ -1,0 +1,19 @@
+<view class="account-item">
+  <view class="icon">
+    <t-icon name="logo-wechat" size="48rpx" color="#2E56FF"></t-icon>
+  </view>
+  <view class="account-info">
+    <view class="top">
+      <view class="top-left">公共交通</view>
+      <view class="top-right">-1087.43</view>
+    </view>
+    <view class="bottom">
+      <view class="bottom-left">
+        12:08 | 微信支付
+      </view>
+      <view class="bottom-right">
+        @小菜花
+      </view>
+    </view>
+  </view>
+</view>

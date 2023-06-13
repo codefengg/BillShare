@@ -12,6 +12,7 @@
   color: inherit;
   font-size: inherit;
   text-decoration: inherit;
+  font-family: DIN Alternate;
 }
 
 .lighter {
@@ -50,6 +51,8 @@
 }
 .pprice {
   display: inline;
+}
+.pprice-margin{
   margin: 0 0 0 4rpx;
 }
 .integer {
@@ -61,6 +64,6 @@
   font-size: inherit;
 }
 .decimal.smaller {
-  font-size: 0.8em;
+  font-size: 0.7em;
   vertical-align: baseline;
 }
